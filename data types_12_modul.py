@@ -86,7 +86,6 @@
 # print(id(L))
 
 
-
 ####Вебинар «Типы данных в Python»####
 # import math
 # a=(math.pow(2, 10))
