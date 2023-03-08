@@ -5,6 +5,7 @@
 # cond2 = 1 < 4
 # print(cond1 and cond2)
 # # True
+import password as password
 
 # или, например, содержат ли две строки один и тот же символ
 # cond3 = 't' in "python"
@@ -185,7 +186,7 @@
 # if 6 <= hour < 12:
 #     print("Утро!!!")
 
- # x = int(input('x: '))
+# x = int(input('x: '))
 # x = 5
 # y = int(input('y: '))
 #
@@ -198,3 +199,110 @@
 # if x < 0 and y > 0:
 #     print('вторая четверть')
 
+#### if-elif-else, в случае выполнения какого-либо все оставшиеся условия проверять не нужно
+# a = int(input('a: '))
+# if a == 10:
+#     print('a равно 10')
+# elif a < 10:
+#     print('a меньше 10')
+# else:
+#     print('a больше 10')
+#
+
+####Задача "Нормер месяца" -- ## in
+# «Весна» для 3, 4, 5 месяца;
+# «Лето» для 6, 7, 8 месяца;
+# «Осень» для 9, 10, 11 месяца;
+# «Зима» для 12, 1, 2 месяца.
+
+# month = int(input())
+# if month in [3, 4, 5]:
+#     print('Весна')
+# if month in [6, 7, 8]:
+#     print('Лето')
+# if month in [9, 10, 11]:
+#     print('Осень')
+# if month in [12, 1, 2]:
+#     print('Зима')
+
+
+
+###Задание 13.5.3
+# speed = int(input(' '))
+# def get_wind_class(speed):
+#     if 1 <= speed <= 4:
+#         return "weak [1]"
+#     if 5 <= speed <= 10:
+#         return "moderate [2]"
+#     if 11 <= speed <= 18:
+#         return "strong [3]"
+#     if speed >= 19:
+#         return "hurricane [4]"
+# print(get_wind_class(15))
+###Можно так?
+# def get_wind_class(speed):
+#     if speed in [1, 2, 3, 4]:
+#         return "weak [1]"
+#     if 5 <= speed <= 10:
+#         return "moderate [2]"
+#     if 11 <= speed <= 18:
+#         return "strong [3]"
+#     if speed >= 19:
+#         return "hurricane [4]"
+# print(get_wind_class(2))
+
+
+
+
+#### Задание 13.5.4
+#
+# user_database = {
+#     'user': 'password',
+#     'iseedeadpeople': 'greedisgood',
+#     'hesoyam': 'tgm'
+# }
+# def check_user(username, password):
+#     if username in user_database:
+#         if password in user_database[username]:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+# print(check_user(username = 'ffepk', password = 'password'))
+
+
+
+
+##Тернарный условный оператор
+# result
+# result = a if a > b else b
+
+
+### Задание 13.5.5
+# A = int(input( ))
+# B = int(input( ))
+# C = int(input( ))
+#
+# if ((A < 45) and (B >= 45) and (C >= 45)) or \
+#    ((A >= 45) and (B < 45)) and (C >= 45) or \
+#    ((A >= 45) and (B >= 45) and (C < 45)):
+#     print('Одно из чисел меньше 45')
+# else:
+#     print('Нет числа меньше 45 или таких чисел больше')
+
+
+#### Задание 13.5.6
+# A = int(input( ))
+#
+# if not (-1 <= A <= -10) or (2 <= A <= 15):
+#     print('Число не пренадлежит интервалу')
+# else:
+#     print('Число принадлежит интревалу')
+
+#### Задание 13.5.7
+# n = 15
+# first_digit = n // 10
+# second_digit = n % 10
+#
+# print((first_digit == 5) or (second_digit == 5))
